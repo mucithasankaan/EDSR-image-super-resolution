@@ -160,7 +160,7 @@ train_model(model, criterion, optimizer, train_loader, num_epochs=5)
 try:
     # Test the trained model by enhancing a low-resolution sample image. The image '720p/vid1_frame_667.jpg' is
     # processed, and the resulting high-resolution image is saved as 'output.png'.
-    process_image(model, '720p/vid1_frame_667.jpg', 'output.png')
+    process_image(model, 'test_image.jpg', 'test_image_output.png')
 except Exception as e:
     # In case of an error (e.g., file not found, processing error), it is printed to the console.
     print("Error in saving image: " + str(e))
