@@ -135,7 +135,7 @@ scale_factor = 1.5
 
 # Load the EDSR model. If 'edsr_model.pth' exists, it loads this pre-trained model; otherwise, it initializes a new
 # model.
-model = load_model("Example_EDSR_Model1.pth")
+model = load_model("edsr_model.pth")
 
 # Define the loss function as Mean Squared Error Loss, suitable for regression tasks like image super-resolution.
 criterion = nn.MSELoss().to(device)
@@ -148,7 +148,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 # images are resized to 1080x1920 pixels with antialiasing to maintain image quality, and then converted to PyTorch
 # tensors.
 transform = Compose([Resize((1080, 1920), antialias=True), ToTensor()])
-train_dataset = ImageDataset(low_res_folder='720p_frames/', high_res_folder='1080p_frames/', transform=transform)
+train_dataset = ImageDataset(low_res_folder='datas/720p_frames/', high_res_folder='datas/1080p_frames/', transform=transform)
 train_loader = DataLoader(train_dataset, batch_size=8, shuffle=True)
 
 print("Data loaded, training started")
@@ -167,4 +167,4 @@ except Exception as e:
 
 # Finally, save the updated state of the model to a new file 'edsr_model1.pth'.
 # This allows the model's learned weights to be reused without needing to retrain from scratch.
-save_model(model, 'EDSR_Model1.pth')
+save_model(model, 'edsr_model1.pth')
