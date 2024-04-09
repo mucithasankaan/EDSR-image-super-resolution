@@ -40,4 +40,4 @@ This code loads a trained and saved model, and attempts to enhance the quality a
 
 ## Contact
 mucithasankaan@gmail.com <br>
-Instagram.com/mucithasankaan
+instagram.com/mucithasankaan
