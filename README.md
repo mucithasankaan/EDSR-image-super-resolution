@@ -20,10 +20,14 @@
 
 3: If you have completed all the steps correctly, run the Trainmodel code. If everything is as it should be, after the code runs, it should print "Device: cuda". If it prints "Device: cpu", it means something has gone wrong. In this case, manually delete the torch and torchvision libraries and rerun the code you get from this link: https://pytorch.org/.
 
-### If you do not have an RTX graphics card, you can install the libraries in the usual way.
+### If you do not have an RTX graphics card, you can install the libraries in the usual way:
+1 pip: <br>
+pip install torch torchvision
+
+2 conda: <br>
+conda install pytorch torchvision -c pytorch
 
 ## Included Codes:
-
 ### Video2Frame_Data_Generator.py:
 This code randomly selects a specified total number of frames from videos in the video_datas folder, then creates two different images with those frames at two different qualities: low quality at 720p and high quality at 1080p. It saves these images in the 720p_frames and 1080p_frames folders for the purpose of training artificial intelligence.
 
