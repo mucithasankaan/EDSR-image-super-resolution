@@ -15,7 +15,7 @@
 1: Please go to the website https://pytorch.org/, scroll down a bit, and retrieve the download command for a PyTorch version compatible with CUDA as per your requirements. Then, execute it in your Python environment's console.
 ![pytorch](ReadMe_images/pytorch.png)
 
-2: Go to the link https://developer.nvidia.com/cuda-toolkit-archive, find and download the CUDA version you selected when downloading the PyTorch library, and install it.
+2: Please go to the link https://developer.nvidia.com/cuda-toolkit-archive, find and download the version of CUDA you chose while installing the PyTorch library. For example, as shown in the photo above, I opted for version 11.8 and downloaded it from this archive.
 ![cuda archive](ReadMe_images/cuda_archive.png)
 
 3: If you have completed all the steps correctly, run the Trainmodel code. If everything is as it should be, after the code runs, it should print "Device: cuda". If it prints "Device: cpu", it means something has gone wrong. In this case, manually delete the torch and torchvision libraries and rerun the code you get from this link: https://pytorch.org/.
