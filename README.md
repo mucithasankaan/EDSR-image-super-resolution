@@ -36,3 +36,8 @@ This code collects high and low-quality photos from the folders named 720p_frame
 
 ### inference_code:
 This code loads a trained and saved model, and attempts to enhance the quality and resolution of a given photograph using this model, then saves the enhanced photograph.
+
+
+## Contact
+mucithasankaan@gmail.com <br>
+Instagram.com/mucithasankaan
