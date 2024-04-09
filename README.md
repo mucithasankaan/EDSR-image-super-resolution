@@ -18,7 +18,7 @@
 2: Please go to the link https://developer.nvidia.com/cuda-toolkit-archive, find and download the version of CUDA you chose while installing the PyTorch library. For example, as shown in the photo above, I opted for version 11.8 and downloaded it from this archive.
 ![cuda archive](ReadMe_images/cuda_archive.png)
 
-3: If you have completed all the steps correctly, run the Trainmodel code. If everything is as it should be, after the code runs, it should print "Device: cuda". If it prints "Device: cpu", it means something has gone wrong. In this case, manually delete the torch and torchvision libraries and rerun the code you get from this link: https://pytorch.org/.
+3: If you've completed all the steps correctly, run the Trainmodel code. If everything is as it should be, after running the code, it should say "Device: cuda". If it says "Device: cpu", something went wrong. In this case, uninstall the torch and torchvision libraries using pip: pip uninstall torch torchvision; if you're using conda: conda remove pytorch, conda remove torchvision. Then, reinstall them using the code from this link: https://pytorch.org/.
 
 ### If you do not have an RTX graphics card, you can install the libraries in the usual way:
 1 pip: <br>
