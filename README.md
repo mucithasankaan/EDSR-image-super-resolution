@@ -1,7 +1,7 @@
 
 # IMAGE-SUPER-RESOLUTION-SYSTEM
 
-#### This project involves the fundamentals of a super-resolution artificial intelligence that enhances an image to higher quality and resolution, and includes a working example with a basic model.
+#### This project is about the fundamentals of super-resolution artificial intelligence, specifically centered on the Enhanced Deep Super-Resolution (EDSR) technique. EDSR is used to improve image quality and resolution. The project includes a practical example demonstrating how a basic EDSR model works in enhancing images.
 
 ## Prerequisites:
 1: Python 3.8 or later <br>
