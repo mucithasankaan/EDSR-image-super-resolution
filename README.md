@@ -32,7 +32,7 @@ conda install pytorch torchvision -c pytorch
 This code randomly selects a specified total number of frames from videos in the video_datas folder, then creates two different images with those frames at two different qualities: low quality at 720p and high quality at 1080p. It saves these images in the 720p_frames and 1080p_frames folders for the purpose of training artificial intelligence.
 
 ### TrainModel.py:
-This code collects high and low-quality photos from the folders named 720p_frames and 1080p_frames, and uses them to train a super-resolution artificial intelligence model on the torch library to enhance the quality of images. It then saves this model and tests it on a photograph.
+If you've completed all the steps correctly, run the Trainmodel code. If everything is as it should be, after running the code, it should say "Device: cuda". If it says "Device: cpu", something went wrong. In this case, uninstall the torch and torchvision libraries using pip: pip uninstall torch torchvision; if you're using conda: conda remove pytorch, conda remove torchvision. Then, reinstall them using the code from this link: https://pytorch.org/.
 
 ### inference_code:
 This code loads a trained and saved model, and attempts to enhance the quality and resolution of a given photograph using this model, then saves the enhanced photograph.
