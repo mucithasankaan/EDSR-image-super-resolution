@@ -32,7 +32,7 @@ conda install pytorch torchvision -c pytorch
 This code randomly selects a specified total number of frames from videos in the video_datas folder, then creates two different images with those frames at two different qualities: low quality at 720p and high quality at 1080p. It saves these images in the 720p_frames and 1080p_frames folders for the purpose of training artificial intelligence.
 
 ### TrainModel.py:
-This code collects high-quality and low-quality photos from the 720p_frames and 1080p_frames folders and uses them to train a super-resolution artificial intelligence model that enhances the quality of images using the torch library. It saves this model and tests it on a photograph.
+This code gathers high-quality and low-quality images from the 720p_frames and 1080p_frames folders. It uses these images to train a super-resolution artificial intelligence model that enhances image quality, leveraging the torch library. Specifically, it employs the Enhanced Deep Super-Resolution (EDSR) system, which is renowned for its effectiveness in improving resolution and detail without introducing artifacts. Once trained, the model is saved and tested on a photograph to demonstrate its capabilities in image enhancement.
 
 ### inference_code:
 This code loads a trained and saved model, and attempts to enhance the quality and resolution of a given photograph using this model, then saves the enhanced photograph.
