@@ -34,7 +34,7 @@ This code randomly selects a specified total number of frames from videos in the
 ### TrainModel.py:
 This code gathers high-quality and low-quality images from the 720p_frames and 1080p_frames folders. It uses these images to train a super-resolution artificial intelligence model that enhances image quality, leveraging the torch library. Specifically, it employs the Enhanced Deep Super-Resolution (EDSR) system, which is renowned for its effectiveness in improving resolution and detail without introducing artifacts. Once trained, the model is saved and tested on a photograph to demonstrate its capabilities in image enhancement.
 
-### inference_code:
+### inference_code.py:
 This code loads a trained and saved model, and attempts to enhance the quality and resolution of a given photograph using this model, then saves the enhanced photograph.
 
 
